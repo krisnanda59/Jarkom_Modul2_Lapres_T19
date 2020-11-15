@@ -80,14 +80,11 @@ penanjakan.semerut19.pw```
 
 ## Soal 6
 * Pertama kamu melakukan edit pada file ```nano /etc/bind/jarkom/semerut19.pw``` seperti pada gambar dibawah
-![6_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-
-no7fixed/6_1Delegasi%20subdomain_%20konfigurasi%20di%20etc%20bind%20jarkom%20semerut19%20pada%20malang%20.png)
+![6_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_1Delegasi%20subdomain_%20konfigurasi%20di%20etc%20bind%20jarkom%20semerut19%20pada%20malang%20.png)
 * kemudian juga pada melakukan edit pada file ```nano /etc/bind/named.conf.options```
-![6_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-
-no7fixed/6_2Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20options_semerut19pw%20pada%20malang.png)
+![6_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_2Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20options_semerut19pw%20pada%20malang.png)
 * kemudian pada langkah ini kami melakukan edit pada file ```etc/bind/named.conf.local``` di malang seperti pada gambar dibawah
-![6_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-
-no7fixed/6_3Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20local_semerut19pw_pada%20malang_setelah%20diedit.png)
+![6_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_3Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20local_semerut19pw_pada%20malang_setelah%20diedit.png)
 
 ![6_4]()
 
