@@ -7,6 +7,7 @@ Kelompok T19
 
 ---
 ## Table of Contents
+* [Persiapan](#persiapan-0)
 * [Soal 1](#soal-1)
 * [Soal 2](#soal-2)
 * [Soal 3](#soal-3)
@@ -25,6 +26,8 @@ Kelompok T19
 * [Soal 16](#soal-16)
 * [Soal 17](#soal-17)
 ---
+
+## Persiapan
 
 ## Soal 1
 
