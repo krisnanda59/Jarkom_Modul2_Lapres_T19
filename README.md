@@ -1,4 +1,4 @@
-# Shift 1 JARKOM 2020 - T19
+# Jarkom_Modul2_Lapres_T19
 Penyelesaian Soal Shift 1 Komunikasi Data, dan Jaringan Data 2020\
 Kelompok T19
   * Made Krisnanda Utama (05311840000033)
