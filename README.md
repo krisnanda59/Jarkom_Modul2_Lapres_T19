@@ -39,6 +39,7 @@ bind9 di server MALANG,dan MOJOKERTO dengan perintah ```apt-get install bind9 -y
 dengan perintah ```apt-get install apache2 -y```. 
 
 ## Soal 1
+Pertama-tama kami mengkonfigurasikan DNS server MALANG agar domain ```http://semerut03.pw``` mengarah ke server IP PROBOLINGGO. 
 ![1_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/1_1install%20bind_1.png)
 ## Soal 2
 ![2_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/2_1CNAME_alias_1.png)
