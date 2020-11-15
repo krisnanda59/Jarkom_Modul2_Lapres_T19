@@ -53,24 +53,27 @@ Pertama edit file semeru.pw pada client MALANG ```nano /etc/bind/jarkom/semerut1
 Kemudian edit ```nano /etc/bind/named.conf.local```, kemudian restart bind9 dengan perintah ```service bind9 restart```, terakhir lakukan testing pada client GRESIK ```ping penanjakan.semerut19.pw```
 ![3_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/3_2.png)
 ## Soal 4
+Pertama edit file nano /etc/bind/named.conf.local pada MALANG
 ![4_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_1reverse%20DNS_1.png)
 
 ![4_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_2reverse%20DNS_2(update%20di%20gresik).png)
 
 ![4_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_3reverse%20DNS_3%20(error%20saat%20install%20DNS_UTILS).png)
-
+Kemudian restart bind9 dengan perintah service bind9 restart, Untuk mengecek konfigurasi dapat melakukan perintah host -t PTR 10.151.71.128 pada client GRESIK
 ![4_4](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_4reverse%20DNS_4(complit).png)
 
 ## Soal 5
+Pertama edit MALANG ```nano /etc/bind/named.conf.local```
 ![5_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/5_1DNS%20MASTER-SLAVE_1(master).png)
 
 ![5_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/5_2.png)
-
+Kemudian lakukan ```ping semerut19.pw``` pada client GRESIK
 ![5_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/5_3DNS%20MASTER-SLAVE_4(testing%20slave%20di%20gresik).png)
 
 ## Soal 6
+Pertama edit file ```nano /etc/bind/jarkom/semerut19.pw```
 ![6_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_1Delegasi%20subdomain_%20konfigurasi%20di%20etc%20bind%20jarkom%20semerut19%20pada%20malang%20.png)
-
+Edit ```nano /etc/bind/named.conf.options```
 ![6_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_2Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20options_semerut19pw%20pada%20malang.png)
 
 ![6_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_3Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20local_semerut19pw_pada%20malang_setelah%20diedit.png)
@@ -78,14 +81,16 @@ Kemudian edit ```nano /etc/bind/named.conf.local```, kemudian restart bind9 deng
 ![6_4]()
 
 ![6_5](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_5Delegasi%20subdomain_%20konfigurasi%20di%20named%20conf%20local__%20pada%20mojokerto.png)
-
+Buat direktori delegasi ```mkdir /etc/bind/delegasi```, kemudian copykan db.local ke dalam gunung.semeru.t14.pw ```cp /etc/bind/db.local /etc/bind/delegasi/gunung.semerut19.pw```, kemudian edit ```nano /etc/bind/delegasi/gunung.semerut19.pw``` menjadi seperti dokumentasi di bawah 
 ![6_6](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_6Delegasi%20subdomain_%20konfigurasi%20di%20etc%20bind%20delegasi%20GUNUNG%20semerut19%20pw_pada%20mojokerto.png)
-
+Kemudian restart bind9 dengan perintah ```service bind9 restart```
+Lakukan testing ```ping gunung.semerut19.pw```
 ![6_7](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_7Delegasi%20subdomain_%20pengetesan%20ping%20ke%20sub%20domain%20baru(gunung).png)
 
 ## Soal 7
+Pertama pada MOJOKERTO edit ```nano /etc/bind/delegasi/gunung.semerut19.pw``` dan tambahkan ```naik IN A 10.151.77.164```
 ![7_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/6_6Delegasi%20subdomain_%20konfigurasi%20di%20etc%20bind%20delegasi%20GUNUNG%20semerut19%20pw_pada%20mojokerto.png)
-
+Kemudian restart bind9 dengan perintah ```service bind9 restart```, kemudian lakukan testing ```ping naik.gunung.semerut19.pw```
 ![7_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/7_2Delegasi%20subdomain_%20berhasil%20ping%20dari%20gresik%20kepada%20gunung%20semerut19%20%26%20naik%20gunung%20semeru%20t19.png)
 
 ## Soal 8
