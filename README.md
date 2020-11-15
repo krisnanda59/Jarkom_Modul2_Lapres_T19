@@ -39,27 +39,24 @@ bind9 di server MALANG,dan MOJOKERTO dengan perintah ```apt-get install bind9 -y
 dengan perintah ```apt-get install apache2 -y```. 
 
 ## Soal 1
-Pertama-tama kami mengkonfigurasikan DNS server MALANG agar domain ```http://semerut03.pw``` mengarah ke server IP PROBOLINGGO. Pada server MALANG, pertama kami mengedit file ```/etc/bind/named.conf.local``` menambahkan zone ```semerut03.pw```, menggunakan syntax kemudian kami membuat folder jarkom di ```/etc/bind```. Kemudian copy ```/etc/bind/db.local``` menjadi ```/etc/bind/jarkom/semerut03.pw```. Kemudian kami mengkonfigurasi file tersebut agar memiliki SOA ```semerut03.pw.```, NS ```semerut03.pw.```, dan record A yang mengarah menuju IP PROBOLINGGO.
+Pertama-tama kami mengkonfigurasikan DNS server MALANG agar domain ```http://semerut19.pw``` mengarah ke server IP PROBOLINGGO. Pada server MALANG, pertama kami mengedit file ```/etc/bind/named.conf.local``` menambahkan zone ```semerut19.pw```, menggunakan syntax kemudian kami membuat folder jarkom di ```/etc/bind```. Kemudian copy ```/etc/bind/db.local``` menjadi ```/etc/bind/jarkom/semerut19.pw```. Kemudian kami mengkonfigurasi file tersebut agar memiliki SOA ```semerut19.pw.```, NS ```semerut19.pw.```, dan record A yang mengarah menuju IP PROBOLINGGO.
 ![1_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/1_1install%20bind_1.png)
 ## Soal 2
-Pertama sama mengkonfigurasikan DNS server MALANG agar domain ```http://semerut03.pw``` memiliki alias.
+Pertama sama mengkonfigurasikan DNS server MALANG agar domain ```http://semerut19.pw``` memiliki alias.
 ![2_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/2_1CNAME_alias_1.png)
 - Kemudian restart bind9 menggunakan perintah ```service bind9 restart```
-- Lalu cek di client GRESIK ```ping www.semerut14.pw```
+- Lalu cek di client GRESIK ```ping www.semerut19.pw```
 ![2_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/2_2CNAME_alias_1(berhasil%20ping%20di%20client).png)
 ## Soal 3
-Pertama edit file semeru.pw pada client MALANG ```nano /etc/bind/jarkom/semerut14.pw```
+Pertama edit file semeru.pw pada client MALANG ```nano /etc/bind/jarkom/semerut19.pw```
 ![3_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/3_1.png)
-Kemudian edit ```nano /etc/bind/named.conf.local```, kemudian restart bind9 dengan perintah ```service bind9 restart```, terakhir lakukan testing pada client GRESIK ```ping penanjakan.semerut14.pw```
+Kemudian edit ```nano /etc/bind/named.conf.local```, kemudian restart bind9 dengan perintah ```service bind9 restart```, terakhir lakukan testing pada client GRESIK ```ping penanjakan.semerut19.pw```
 ![3_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/3_2.png)
 ## Soal 4
-Pertama edit file ```nano /etc/bind/named.conf.local``` pada client MALANG
 ![4_1](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_1reverse%20DNS_1.png)
-Kemudian copykan file db.local ke dalam file 77.151.10.in-addr.arpa pada folder jarkom dengan perintah ```cp /etc/bind/db.local /etc/bind/jarkom/77.151.10.in-addr.arpa```, ```77.151.10``` merupakan 3 byte pertama IP MALANG yang di-reverse urutannya
-Kemudian edit file dengan ```nano /etc/bind/jarkom/77.151.10.in-addr.arpa```
+
 ![4_2](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_2reverse%20DNS_2(update%20di%20gresik).png)
-Kemudian restart bind9 dengan perintah ```service bind9 restart```
-Untuk mengecek konfigurasi dapat melakukan perintah ```host -t PTR 10.151.77.162``` pada client GRESIK
+
 ![4_3](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_3reverse%20DNS_3%20(error%20saat%20install%20DNS_UTILS).png)
 
 ![4_4](https://github.com/krisnanda59/Sif-Jarkom1/blob/main/dokum_no1%20-no7fixed/4_4reverse%20DNS_4(complit).png)
